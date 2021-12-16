@@ -1,0 +1,18 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class DiagnosticFileInterpreter {
+
+    private final File file;
+    private final Scanner fileReader;
+
+    DiagnosticFileInterpreter(File file, String pathname) throws FileNotFoundException {
+        this.file = new File(pathname);
+        fileReader = new Scanner(file);
+    }
+
+    void testMethod() {
+        System.out.println(fileReader.next());
+    }
+}

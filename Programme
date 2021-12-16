@@ -1,0 +1,15 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Programme {
+
+    public static void main(String[] args) throws FileNotFoundException {
+        System.out.println("Initialising...");
+
+        File diagnosticReport;
+        DiagnosticFileInterpreter dfi = new DiagnosticFileInterpreter(diagnosticReport, "src/diagnosticReport.txt");
+
+        dfi.testMethod();
+    }
+}
